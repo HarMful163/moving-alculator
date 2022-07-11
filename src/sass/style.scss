@@ -1,0 +1,19 @@
+@import 'base/variables';
+@import 'base/mixins';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0 129px 0 90px;
+}
+
+@import 'blocks/title';
+@import 'blocks/calc';
+@import 'blocks/income';
+@import 'blocks/expenses';
+@import 'blocks/price';
+@import 'blocks/country';

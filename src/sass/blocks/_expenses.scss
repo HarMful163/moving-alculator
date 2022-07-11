@@ -1,0 +1,51 @@
+.expenses {
+    margin-top: 60px;
+    display: flex;
+    &__title {
+        margin: auto 0;
+    }
+    &__wrapper {
+        position: relative;
+        margin-left: 140px;
+        padding-left: 311px;
+        width: 100%;
+        @include vertical;
+    }
+    &__list {
+        height: 328px;
+        height: 23px;
+        :first-child {
+            margin-top: 10px;
+        }
+    }
+    &__item {
+        list-style-type: none;
+        margin-top: 38px;
+        @include horizontal;
+    }
+    &__link {
+        color: black;
+        text-decoration: none;
+        transition: all 500ms ease;
+        &:hover {
+            color: $main-color;
+            font-size: 21px;
+        }
+    }
+    &__value {
+        padding-left: 310px;
+        margin-left: 140px;
+        position: relative;
+        @include vertical;
+        :first-child {
+            margin-top: 0;
+        }
+    }
+    &__block {
+        width: 250px;
+        height: 40px;
+        border: 1px solid $main-color;
+        margin-top: 21px;
+        @include horizontal;
+    }
+}

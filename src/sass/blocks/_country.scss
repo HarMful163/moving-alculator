@@ -1,0 +1,28 @@
+.country {
+    margin-top: 60px;
+    &__title {
+        text-align: center;
+    }
+    &__wrapper {
+        padding: 20px;
+        margin-top: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        height: 100%;
+        border: 5px solid #FF9035;
+    }
+    &__item {
+        text-decoration: none;
+        color: black;
+        margin-right: 50px;
+        transition: all 500ms ease;
+        :last-child {
+            margin-right: 0;
+        }
+        &:hover {
+            color: $main-color;
+            font-size: 38px;
+        }
+    }
+}
